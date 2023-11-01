@@ -268,6 +268,7 @@
 
         <main class="row">
             <div class="row">
+                <div class="col-2"></div>
                 <div class="col-4 text-center">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
@@ -298,12 +299,51 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
                     </div>
-                    <button type="submit" class="w-100 btn btn-lg  btn-primary">Отправить</button>
+                    <button type="submit" class="w-100 btn btn-lg btn-primary">Отправить</button>
                 </form>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <button class="w-100 btn btn-lg btn-info" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#HowToBuy" aria-expanded="false" aria-controls="HowToBuy">
+                            Как купить?
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button class="w-100 btn btn-lg btn-info" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#HowToDeliver" aria-expanded="false" aria-controls="HowToDeliver">
+                            Как доставить?
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button class="w-100 btn btn-lg btn-info" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#WhatIsTheGuarantee" aria-expanded="false" aria-controls="WhatIsTheGuarantee">
+                            Какая гарантия?
+                        </button>
+                    </div>
+                    <div class="collapse" id="HowToBuy">
+                        <div class="card card-body">
+                            Купить можно нажав кнопку "Купить"
+                        </div>
+                    </div>
+                    <div class="collapse" id="HowToDeliver">
+                        <div class="card card-body">
+                            Доставка в любую точку мира!
+                        </div>
+                    </div>
+                    <div class="collapse" id="WhatIsTheGuarantee">
+                        <div class="card card-body">
+                            Гарантия действительна 12 месяцев!
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
     </div>
+
 
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
