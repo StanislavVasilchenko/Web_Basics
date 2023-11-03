@@ -14,8 +14,6 @@ class LocalServer(BaseHTTPRequestHandler):
         return result
 
     def do_GET(self):
-        query_components = parse_qs(urlparse(self.path).query)
-        print(query_components)
         page_content = self.get_html_content()
         self.send_response(200)
         self.send_header("Content-type", "text/html")
